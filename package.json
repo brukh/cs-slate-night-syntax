@@ -1,0 +1,15 @@
+{
+  "name": "cs-slate-night-syntax",
+  "theme": "syntax",
+  "version": "1.0.0",
+  "description": "Minimal syntax theme for Atom by Dayle Rees remixed for use with night-ui",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/atom/cs-slate-night-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

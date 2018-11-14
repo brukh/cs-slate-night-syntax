@@ -1,0 +1,147 @@
+@import "ui-variables";
+
+@base03: #19191f;
+@base02: #073642;
+@base01: #586e75;
+@base00: #657b83;
+@base0: #839496;
+@base1: #93a1a1;
+@base2: #eee8d5;
+@base3: #fdf6e3;
+
+@yellow: #b58900;
+@orange: #cb4b16;
+@red: #dc322f;
+@magenta: #d33682;
+@violet: #6c71c4;
+@blue: #268bd2;
+@cyan: #2aa198;
+@green: #859900;
+
+.editor-colors {
+ background-color: #19191f;
+ color: #ebebf4;
+}
+
+.editor {
+ .invisible-character,
+ .indent-guide {
+  color: #2a2a33;
+ }
+
+ .gutter {
+  background-color: #000;
+ }
+
+ .gutter .line-number {
+  opacity: 0.5;
+ }
+
+ .gutter .line-number.folded,
+ .gutter .line-number:after,
+ .fold-marker:after {
+  color: #89a7b1;
+ }
+
+ .cursor {
+  border-color: #f8f8f0;
+ }
+
+ .selection .region {
+  background-color: #566981;
+  color: #ffffff;
+ }
+
+ .line-number.cursor-line-no-selection {
+  background-color: #2a2a33;
+ }
+}
+
+.bracket-matcher {
+ background-color: #89a7b1;
+ opacity: 0.4;
+}
+
+.syntax--comment {
+ color: #515166;
+}
+
+.syntax--entity {
+ color: #cbdad5;
+}
+
+.syntax--entity.syntax--name.syntax--type.syntax--class {
+ color: #ebebf4;
+}
+
+.syntax--keyword {
+ color: #566981;
+}
+
+.syntax--storage.syntax--type {
+ color: #566981;
+}
+
+.syntax--storage.syntax--modifier {
+ color: #89a7b1;
+}
+
+.syntax--constant {
+ color: #89a7b1;
+
+ &.syntax--numeric,
+ &.syntax--boolean {
+  color: #9eb2d9;
+ }
+}
+
+.syntax--variable {
+ color: #ebebf4;
+}
+
+.syntax--delimiter,
+.syntax--brace {
+ color: #ebebf4;
+}
+
+.syntax--delimiter.syntax--period {
+ color: #89a7b1;
+}
+
+.syntax--invalid.syntax--deprecated {
+ text-decoration: underline;
+ color: @red;
+}
+
+.syntax--invalid.syntax--illegal {
+ color: @red;
+}
+
+.syntax--string {
+ color: #9eb2d9;
+
+ .syntax--constant.syntax--character.syntax--escape {
+  color: @red;
+ }
+
+ &.syntax--regexp {
+  color: #9eb2d9;
+
+  .syntax--source.syntax--ruby.syntax--embedded,
+  .syntax--string.syntax--regexp.syntax--arbitrary-repitition {
+   color: @red;
+  }
+ }
+}
+
+.syntax--keyword.syntax--other.syntax--phpdoc {
+ color: #686883;
+}
+
+.syntax--entity.syntax--name.syntax--tag {
+ color: #566981;
+}
+
+.syntax--entity.syntax--other.syntax--attribute-name {
+ color: #89a7b1;
+}
